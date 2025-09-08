@@ -40,7 +40,7 @@ PopStoryView.prototype.insert = function(widget) {
 		$tw.utils.setStyle(targetElement,[
 			{transform: "none"}
 		]);
-    targetElement.style.removeProperty('transition');
+		targetElement.style.removeProperty('transition');
 		$tw.utils.setStyle(widget.document.body,[
 			{"overflow-x": ""}
 		]);
