@@ -56,7 +56,7 @@ ClassicStoryView.prototype.insert = function(widget) {
 			{marginBottom: (-currHeight) + "px"},
 			{opacity: "0.0"}
 		]);
-    targetElement.style.removeProperty('transition');
+		targetElement.style.removeProperty('transition');
 		$tw.utils.forceLayout(targetElement);
 		// Transition to the final position
 		$tw.utils.setStyle(targetElement,[

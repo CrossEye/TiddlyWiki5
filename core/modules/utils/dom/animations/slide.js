@@ -32,8 +32,7 @@ function slideOpen(domNode,options) {
 		if(options.callback) {
 			options.callback();
 		}
-    domNode.style.removeProperty('transition');
-
+		domNode.style.removeProperty('transition');
 	},duration);
 	// Set up the initial position of the element
 	$tw.utils.setStyle(domNode,[
@@ -45,7 +44,6 @@ function slideOpen(domNode,options) {
 		{opacity: "0"}
 	]);
 	domNode.style.removeProperty('transition');
-
 	$tw.utils.forceLayout(domNode);
 	// Transition to the final position
 	$tw.utils.setStyle(domNode,[
@@ -82,7 +80,6 @@ function slideClosed(domNode,options) {
 			options.callback();
 		}
 		domNode.style.removeProperty('transition');
-
 	},duration);
 	// Set up the initial position of the element
 	$tw.utils.setStyle(domNode,[

@@ -65,8 +65,7 @@ CecilyStoryView.prototype.remove = function(widget) {
 	$tw.utils.setStyle(targetElement,[
 		{opacity: "1.0"}
 	]);
-  targetElement.style.removeProperty('transition');
-
+	targetElement.style.removeProperty('transition');
 	$tw.utils.forceLayout(targetElement);
 	$tw.utils.setStyle(targetElement,[
 		{transition: $tw.utils.roundTripPropertyName("transform") + " " + duration + "ms ease-in-out, " +
